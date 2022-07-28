@@ -1,0 +1,75 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /*размер текста*/
+  color: #0A143A; /*цвет текста*/
+}
+.header {
+  max-width: 1146px; /*максимальная ширина*/
+  margin: auto; /*автоматическое выравнивание по середине*/
+  padding-top: 30px; /*отступ верхней части страницы до первого блока*/
+}
+.navbar {
+  display: flex; /* делаем гибкий блок*/
+  align-items: center; /* выравниваем по вертикали по центру*/
+  justify-content: space-between; /*разбрасать элементы по краям*/
+  margin-bottom: 24px; /*нижний отступ от блока navbar*/
+}
+.navbar-menu {
+  margin-right: auto; /*автоматичкский отступ справа*/ 
+}
+.menu {
+  list-style: none; /*отключаем точки в списке*/ 
+  margin: 0; /*обнуляем отступы*/
+  padding-left: 22px; /*внутрений отступ слева*/
+  padding-right: 22px; /*внутрений отступ справа*/
+  display: flex;
+}
+/* Для всех пунктов кроме последнего */
+.menu-item:not(last-child) {
+  margin-right: 14px; /*отступ справа 14 пикселей*/
+}
+.menu-link {
+  text-decoration: none; /*отключаем подчеркивание ссылок*/
+  color:inherit; /*Возьми текста текста как у твоего родителя,чтобы постоянно не писать текст цвета(body)*/
+}
+.button {
+  text-decoration: none;
+  display:inline-block;
+  padding: 10px 15px; /*сверху и снизу 10 пикселей по краям 15*/
+  cursor:pointer; 
+}
+.button-link {
+  color: inherit;
+}
+.button-primary {
+  background: #256EEB; /*цвет фона кнопки*/
+  border-radius: 5px;/*скругление углов кнопки*/
+  color: white;
+}
+.search-panel {
+  height: 50px; /*высота 50px*/
+  background: #256EEB;
+  border-radius: 5px;
+  display: flex;
+  padding: 3px;
+}
+.search-input {
+  flex-grow : 1; /*растягивается на все свободное место*/
+  background: #ffffff;
+  border-radius: 5px;
+  border: none; /*отключаем обводку*/
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.search-button {
+ background: #256EEB;
+ border: none;
+ color: white;
+ padding-right: 17px;
+ padding-left: 20px;
+ display: flex;
+ align-items: center;
+}
+.search-button-text {
+  margin-left: 5px;
+}
